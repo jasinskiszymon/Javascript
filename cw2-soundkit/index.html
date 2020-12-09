@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-    <audio src="sounds/boom.wav" controls></audio>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soundkit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="title">Easy and simple drumkit, have fun :) </p>
+    <p class="description">
+      By pressing the appropriate button on the keyboard, you can play the drum sound.
+      If you wish to record your performance please use the button below.</p>
+    <audio src="sounds/boom.wav" controls id="boom" hidden="true"></audio>
+    <audio src="sounds/clap.wav" controls id="clap" hidden="true"></audio>
+    <audio src="sounds/hihat.wav" controls id="hihat" hidden="true"></audio>
+    <audio src="sounds/kick.wav" controls id="kick" hidden="true"></audio>
+    <audio src="sounds/tom.wav" controls id="tom" hidden="true"></audio>
+    <audio src="sounds/openhat.wav" controls id="openhat" hidden="true"></audio>
+    <audio src="sounds/ride.wav" controls id="ride" hidden="true"></audio>
+    <audio src="sounds/snare.wav" controls id="snare" hidden="true"></audio>
+    <audio src="sounds/tink.wav" controls id="tink" hidden="true"></audio>
+    <button id="playBtn"><b>Play recorded audio &#9836;</b></button>
+
+    <script src="main.js" type="text/javascript"></script>
+    
+    
+  </body>
 </html>

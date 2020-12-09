@@ -1,0 +1,28 @@
+body{
+    background-image: url("xd.png");
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+
+
+}
+.description{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+button{
+    border: 2px solid black;
+    width: 150px; 
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+}
