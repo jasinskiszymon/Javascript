@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Programowanie w javascripcie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasinskiszymon/Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasinskiszymon/Javascript/issues"
+  },
+  "homepage": "https://github.com/jasinskiszymon/Javascript#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0"
+  }
+}
