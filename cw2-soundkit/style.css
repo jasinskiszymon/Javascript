@@ -1,5 +1,5 @@
 body{
-    background-image: url("xd.png");
+    background-image: url("drum.png");
     margin: 0 auto;
     background-attachment: fixed;
     background-repeat: no-repeat, repeat;
@@ -19,10 +19,21 @@ body{
 
 }
 
-button{
-    border: 2px solid black;
-    width: 150px; 
-    margin: 0 auto;
-    display: block;
+#playBtn, #playBtn2, #playBtn3, #playBtn4{
+    width: 300px;
+    height: 40px;
     border-radius: 12px;
+}
+#record, #record2, #record3 , #record4{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: red;
+
+
+
+}
+#middle-button{
+    text-align: center;
+    
 }
