@@ -1,15 +1,6 @@
-let channel = [];
-let channel2 =[];
-let channel3 = [];
-let channel4 = [];
-let recordStart;
-let recordStart2;
-let recordStart3;
-let recordStart4;
-let Recording1 = false;
-let Recording2 = false;
-let Recording3 = false;
-let Recording4 = false;
+let channel, channel2, channel3,channel4  = [];
+let recordStart,recordStart2,recordStart3,recordStart4;
+let Recording1,Recording2,Recording3,Recording4 = false;
 document.body.addEventListener('keypress', onKeyPress);
 document.querySelector('#playBtn').addEventListener('click', playChannel1);
 document.querySelector('#record').addEventListener('click', recordChannel);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>keepnote</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="nav-bar">
+            <div class="nav-left">easy and simple, keepnote, for your light mind!  </div>
+            <div class="nav-right"><i class="fas fa-info-circle"></i></div>
+        </div>
+        <div class="main-section">
+            <div class="actions">
+                <input class="main-input" id="myInput"placeholder="add a to do" size="30">
+                <button id="Btn">PRESS ME!</button>
+                <i class="fas fa-arrow-circle-right" onclick="submit()"> </i>
+            </div>
+            <div class="collection" id="results">
+          </div>
+          <i class="far fa-check-square ${item.complete ? '' : 'fade'}" onclick="toggleComplete(${index})"></i>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
