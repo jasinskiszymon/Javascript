@@ -6,14 +6,15 @@ function setup() {
   }
   render();
 }
-
 function render() {
   var myOutput = "";
   myData.forEach(function (item, index) {
     myOutput += `
       <div class="item">
+      <div class="nav">
       <div class="item-title">
       ${item.titel}
+      </div>
       </div>
         <div class="item-content">
           ${item.content}
@@ -21,17 +22,22 @@ function render() {
         <div class="item-actions">
           <i class="far fa-check-square ${item.complete ? '' : 'fade'}" onclick="toggleComplete(${index})"></i>
           <i class="far fa-trash-alt fade" onclick="deleteItem(${index})"></i>
-          <i class="fas fa-heart ${item.favorite ? '' : 'fade'}" onclick="toggleFavorite(${index})"></i>
+          <i class="fas fa-heart  ${item.favorite ? '' : 'fade'}" onclick="toggleFavorite(${index})  "></i>
         </div>
       </div>`;
   });
   document.querySelector("#results").innerHTML = myOutput;
 }
 
+
+
+	
 // eslint-disable-next-line no-unused-vars
 function submit() {
   var newItem = document.querySelector("#myInput").value;
   var title = document.querySelector("#title").value;
+ 
+
   myData.push({content: newItem, titel: title, complete: false});
   updateStorage();
   render();
@@ -67,6 +73,7 @@ function toggleFavorite(index) {
   else {
     myData[index].favorite = true;
   }
+  updateStorage();
   render();
 }
 
@@ -75,3 +82,4 @@ function updateStorage() {
 }
 
 window.onload = setup();
+

@@ -7,7 +7,6 @@
     <title>remember_more</title>
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <p class="title"> Hey, this is a simple notebook that will help you remember more :) </p>
@@ -19,30 +18,30 @@
     <div class="container">
         <form>
         <div class="row">
-          <div class="col-25">
+          <div class="col-left">
             <label for="lname">Note title</label>
           </div>
-          <div class="col-75">
+          <div class="col-right">
             <input type="text" id="title" name="lastname" placeholder="Enter a title for your note here...">
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-left">
             <label for="color">Choose your color.</label>
           </div>
-          <div class="col-75a">
+          <div class="col-right-little-change">
             <select id="color" name="color" >
-              <option id="red" value="red" style="background-color:  White">Color White, standard.</option>
+              <option id="white" value="white">White, just white..</option>
               <option id="green"value="green" style="background-color:  rgb(42, 206, 42)">Color Green, for important.</option>
               <option id="blue" value="blue" style="background-color:  rgb(44, 140, 230)" >Color Blue for the less important. </option>
             </select>
           </div>
         </div>
         <div class="row">
-          <div class="col-25">
+          <div class="col-left">
             <label for="subject">Subject</label>
           </div>
-          <div class="col-75">
+          <div class="col-right">
             <textarea id="myInput" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           </div>
         </div>
@@ -55,7 +54,6 @@
             </div>
             <div class="collection" id="results">
           </div>
-          <i class="far fa-check-square ${item.complete ? '' : 'fade'}" onclick="toggleComplete($,{index})"></i>
         </div>
     </div>
     <script src="main.js"></script>
