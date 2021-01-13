@@ -1,0 +1,10 @@
+canvas {
+    background: -webkit-gradient(linear,center top,center bottom,from(black), color-stop(1, #424141),to(#424141));
+    overflow: hidden;
+    outline: none;
+   
+}
+
+body { 
+    margin:0;
+     } 
