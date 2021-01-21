@@ -1,5 +1,6 @@
-const lightbox = document.querySelector('.lightbox');
+/* eslint-disable no-unused-vars */
 
+const lightbox = document.querySelector('.lightbox');
 const next = document.querySelector('.lightbox .arrow-next');
 const prev = document.querySelector('.lightbox .arrow-prev');
 let selectedImage = -1;
@@ -21,6 +22,7 @@ function showLightbox(ev, nr) {
 }
 prev.addEventListener('click', prev);
 
+
 function remove(){
     const lightbox = document.querySelector('.lightbox');
     lightbox.classList.remove('visible');
@@ -30,8 +32,10 @@ next.addEventListener('click', nextimg);
 function nextimg(ev){
     ev.stopPropagation;
     console.log("hell-nextt");
+    
     const lightbox = document.querySelector('.lightbox');
     const img = document.querySelector('.lightbox img');
+    
     const imgUrl = ev.target.src;
     if (selectedImage + 1 < imgs.length) {
       const nextEl = imgs[++selectedImage];
@@ -47,7 +51,7 @@ function previmg(ev){
     const img = document.querySelector('.lightbox img');
     const imgUrl = ev.target.src;
     if (selectedImage - 1 < imgs.length) {
-      const nextEl = imgs[--selectedImage];
-      img.src = nextEl.src;
+    const nextEl = imgs[--selectedImage];
+    img.src = nextEl.src;
     }
 }

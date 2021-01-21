@@ -1,5 +1,4 @@
-var myData = [
-];
+let myData = [ ];
 function setup() {
   if (localStorage.getItem("myStoredData")) {
     myData = JSON.parse(localStorage.getItem("myStoredData"));
@@ -7,7 +6,7 @@ function setup() {
   render();
 }
 function render() {
-  var myOutput = "";
+  let myOutput = "";
   myData.forEach(function (item, index) {
     myOutput += `
       <div class="item">
@@ -34,8 +33,8 @@ function render() {
 	
 // eslint-disable-next-line no-unused-vars
 function submit() {
-  var newItem = document.querySelector("#myInput").value;
-  var title = document.querySelector("#title").value;
+  let newItem = document.querySelector("#myInput").value;
+  let title = document.querySelector("#title").value;
  
 
   myData.push({content: newItem, titel: title, complete: false});
@@ -45,7 +44,7 @@ function submit() {
 
 // eslint-disable-next-line no-unused-vars
 function deleteItem(index) {
-  var verify = confirm("Are you sure? You are about to delete this item.");
+  let verify = confirm("Are you sure? You are about to delete this item.");
   if (verify) {
     myData.splice(index, 1);
     updateStorage();
