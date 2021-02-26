@@ -86,8 +86,8 @@ class Game {
             this.ballElement.style.top = this.ball.y + 'px';
         }
         this.holes.forEach((hole) => {
-            const a = hole.x + 25 - Math.floor(this.ball.x + 25);
-            const b = hole.y + 25 - Math.floor(this.ball.y + 25);
+            const a = hole.x + 40 - Math.floor(this.ball.x + 25);
+            const b = hole.y + 40 - Math.floor(this.ball.y + 25);
             const c = Math.sqrt(a * a + b * b);
 
             if (25 > c) {

@@ -33,8 +33,9 @@ button.addEventListener('click', function(){
             data.desc = weather.weather[0].description;
             data.icon = weather.weather[0].icon;
             SetDataInDataArray();
-            NewDiv();
             GetLS();
+            NewDiv();
+            
             
         });
         //Tworzenie diva - kartki z pogodą dla miasta
