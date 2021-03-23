@@ -95,12 +95,14 @@ function SetDataInDataArray() {
 
 function SetLS() {
 let ArrayLenght = DataArray.length;
-localStorage.setItem('DanePogoda', JSON.stringify(DataArray)); 
-localStorage.setItem('Ilosc', JSON.stringify(ArrayLenght));
+window.localStorage.setItem('DanePogoda', JSON.stringify(DataArray)); 
+window.localStorage.setItem('Ilosc', JSON.stringify(ArrayLenght));
 }
 
 function GetLS(){
     let A = [];
     A = localStorage.getItem('DanePogoda', JSON.parse);
-    console.log(A);
+    return A;
 }
+
+
